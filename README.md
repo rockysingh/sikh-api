@@ -19,6 +19,12 @@ If you would like anything else adding please suggest it or just raise a PR.
 ## Demo
 This will be coming soon.
 
+## CI
+
+This is the CI url: https://travis-ci.org/rockysingh/sikh-api
+
+Note: Currently only the Master branch is built. Once the master is built the plan is to use continous deployment on the server.
+
 ## Prerequisites
 
 To install the local Sikh API locally, please ensure you have the following packages installed on your local build box.
