@@ -2,7 +2,7 @@
 
 Version: 0.1
 
-##Introduction
+## Introduction
 
 Welcome to the Sikh API. This API is built using Spring-Boot Framework and Java. We are also using MongoDB.
 
