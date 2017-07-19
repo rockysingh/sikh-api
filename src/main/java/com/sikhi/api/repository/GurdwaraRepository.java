@@ -1,7 +1,7 @@
 package com.sikhi.api.repository;
 
 import com.sikhi.api.model.Gurdwara;
-import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.repository.CrudRepository;
 
-public interface GurdwaraRepository extends MongoRepository<Gurdwara,String> {
+public interface GurdwaraRepository extends CrudRepository<Gurdwara,String> {
 }

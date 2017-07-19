@@ -1,7 +1,7 @@
 package com.sikhi.api.repository;
 
 import com.sikhi.api.model.CharSahibzade;
-import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.repository.CrudRepository;
 
-public interface CharSahibzadeRepository extends MongoRepository<CharSahibzade,String> {
+public interface CharSahibzadeRepository extends CrudRepository<CharSahibzade,String> {
 }
