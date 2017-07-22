@@ -32,4 +32,4 @@ To install the local Sikh API locally, please ensure you have the following pack
 * Git
 * Maven 3+
 * Java 1.8.0+
-* MongoDB 3.4.0
+* postgreSQL 9.4+
