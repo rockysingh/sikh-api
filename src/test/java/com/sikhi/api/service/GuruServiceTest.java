@@ -43,7 +43,7 @@ public class GuruServiceTest extends UnitBaseTest {
     @Test
     public void list() throws Exception {
         when(guruRepository.findAll()).thenReturn(getGurus());
-        List<Guru> gugrus = guruService.list();
+        List<Guru> gurus = guruService.list();
         assertEquals(getGurus(),gurus);
     }
 
