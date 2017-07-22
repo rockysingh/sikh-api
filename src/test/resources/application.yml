@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:db
+    driver-class-name: org.h2.Driver
+  data:
+    jpa:
+      repositories:
+        enabled: tru

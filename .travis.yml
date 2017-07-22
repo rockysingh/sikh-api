@@ -2,6 +2,6 @@ language: java
 jdk:
  - oraclejdk8
 services:
-  - mongod
+  - postgresql
 script:
   - mvn clean install

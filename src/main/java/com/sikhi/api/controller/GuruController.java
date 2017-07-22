@@ -1,7 +1,7 @@
 package com.sikhi.api.controller;
 
 import com.sikhi.api.exception.ResultNotFoundException;
-import com.sikhi.api.model.Guru;
+import com.sikhi.api.entity.Guru;
 
 import com.sikhi.api.service.GuruService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController("/gurus")
+@RestController
 public class GuruController {
 
     private final GuruService guruService;
@@ -22,7 +22,7 @@ public class GuruController {
     }
 
     @RequestMapping(
-            path = "/{id}",
+            path = "/gurus/{id}",
             produces = MediaType.APPLICATION_JSON_VALUE,
             method = RequestMethod.GET)
     @ResponseStatus(code = HttpStatus.OK)
@@ -32,7 +32,7 @@ public class GuruController {
     }
 
     @RequestMapping(
-            path = "",
+            path = "/gurus",
             produces = MediaType.APPLICATION_JSON_VALUE,
             method = RequestMethod.GET)
     @ResponseStatus(code = HttpStatus.OK)

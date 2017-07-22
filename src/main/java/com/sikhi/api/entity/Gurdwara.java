@@ -1,11 +1,14 @@
-package com.sikhi.api.model;
+package com.sikhi.api.entity;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.data.annotation.Id;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Getter
 @Setter
+@Entity
 public class Gurdwara {
 
     @Id
