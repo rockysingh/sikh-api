@@ -5,4 +5,5 @@ spring:
   data:
     jpa:
       repositories:
-        enabled: tru
+        enabled: true
+

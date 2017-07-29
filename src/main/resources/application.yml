@@ -1,3 +1,10 @@
 
 server:
   port: 1699
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost/sikhapi
+    password: postgres
+    username: postgres
