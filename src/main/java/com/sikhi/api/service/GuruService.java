@@ -1,7 +1,7 @@
 package com.sikhi.api.service;
 
-import com.sikhi.api.exception.ResultNotFoundException;
 import com.sikhi.api.entity.Guru;
+import com.sikhi.api.exception.ResultNotFoundException;
 import com.sikhi.api.repository.GuruRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

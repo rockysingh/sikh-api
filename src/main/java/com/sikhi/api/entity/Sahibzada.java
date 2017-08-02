@@ -9,7 +9,7 @@ import javax.persistence.Id;
 @Getter
 @Setter
 @Entity
-public class CharSahibzade {
+public class Sahibzada {
 
     @Id
     private String id;
