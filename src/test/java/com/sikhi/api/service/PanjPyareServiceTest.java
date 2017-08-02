@@ -29,7 +29,7 @@ public class PanjPyareServiceTest extends UnitBaseTest {
     @Test
     public void read_success() throws Exception {
         when(panjPyareRepository.findOne(anyString())).thenReturn(getPanjPyara());
-        PanjPyare panjPyara = panjPyareService.read("1");
+        PanjPyare panjPyara = panjPyareService.read(1);
         assertEquals(getPanjPyara(), panjPyara);
 
     }
@@ -37,7 +37,7 @@ public class PanjPyareServiceTest extends UnitBaseTest {
     @Test(expected = ResultNotFoundException.class)
     public void read_throws_result_not_found_exception() throws Exception {
         when(panjPyareRepository.findOne(anyString())).thenReturn(null);
-        PanjPyare panjPyara = panjPyareService.read("6");
+        PanjPyare panjPyara = panjPyareService.read(6);
     }
 
     @Test

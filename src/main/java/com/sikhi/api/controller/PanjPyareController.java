@@ -25,7 +25,7 @@ public class PanjPyareController {
             produces = MediaType.APPLICATION_JSON_VALUE,
             method = RequestMethod.GET)
     @ResponseStatus(code = HttpStatus.OK)
-    public PanjPyare read(@PathVariable String id)
+    public PanjPyare read(@PathVariable long id)
             throws ResultNotFoundException {
         return panjPyareService.read(id);
     }

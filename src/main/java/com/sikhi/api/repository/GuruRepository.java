@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface GuruRepository extends CrudRepository<Guru, String> {
+    Guru findById(long id);
 }

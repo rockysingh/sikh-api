@@ -16,7 +16,7 @@ import javax.validation.constraints.NotNull;
 public class Guru {
 
     @Id
-    private String id;
+    private long id;
 
     @NotNull
     private String name;

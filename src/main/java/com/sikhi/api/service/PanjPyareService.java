@@ -20,8 +20,8 @@ public class PanjPyareService {
     }
 
 
-    public PanjPyare read(String id) throws ResultNotFoundException {
-        PanjPyare panjPyara = panjPyareRepository.findOne(id);
+    public PanjPyare read(long id) throws ResultNotFoundException {
+        PanjPyare panjPyara = panjPyareRepository.findById(id);
         if (panjPyara == null) {
             throw new ResultNotFoundException("panj pyara not found with id:" + id);
         }

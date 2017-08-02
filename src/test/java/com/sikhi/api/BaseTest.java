@@ -9,7 +9,7 @@ import java.util.List;
 public class BaseTest {
 
     protected Guru getGuru(){
-        return new Guru("1", "Shri Guru Nanak Dev Ji", "1469", "-", "1469","1539","70","70");
+        return new Guru(1, "Shri Guru Nanak Dev Ji", "1469", "-", "1469","1539","70","70");
     }
 
     protected List<Guru> getGurus() {
@@ -19,7 +19,7 @@ public class BaseTest {
     }
 
     protected PanjPyare getPanjPyara() {
-        return new PanjPyare("1", "Bhai Daya Singh","", 1661, "Lahore, Pakistan", "Daya Ram", "Suddha", "Mai Dayali", "Nanded", 1708, 47 );
+        return new PanjPyare(1, "Bhai Daya Singh","", 1661, "Lahore, Pakistan", "Daya Ram", "Suddha", "Mai Dayali", "Nanded", 1708, 47 );
     }
 
     protected List<PanjPyare> getPanjPyare(){

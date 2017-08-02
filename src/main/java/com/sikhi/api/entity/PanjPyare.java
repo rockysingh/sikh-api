@@ -1,24 +1,21 @@
 package com.sikhi.api.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
 @Entity
 @AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode
+@Table(name = "panjpyare")
 public class PanjPyare {
 
     @Id
-    private String id;
+    private long id;
 
     @NotNull
     private String name;

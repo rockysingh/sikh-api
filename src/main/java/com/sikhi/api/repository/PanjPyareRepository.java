@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface PanjPyareRepository extends CrudRepository<PanjPyare, String> {
+    PanjPyare findById(long id);
 }

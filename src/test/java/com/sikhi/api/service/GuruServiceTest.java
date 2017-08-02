@@ -29,7 +29,7 @@ public class GuruServiceTest extends UnitBaseTest {
     @Test
     public void read_success() throws Exception {
         when(guruRepository.findOne(anyString())).thenReturn(getGuru());
-        Guru guru = guruService.read("1");
+        Guru guru = guruService.read(1);
         assertEquals(getGuru(),guru);
 
     }
@@ -37,7 +37,7 @@ public class GuruServiceTest extends UnitBaseTest {
     @Test(expected = ResultNotFoundException.class)
     public void read_throws_result_not_found_exception() throws Exception {
         when(guruRepository.findOne(anyString())).thenReturn(null);
-        Guru guru = guruService.read("12");
+        Guru guru = guruService.read(12);
     }
 
     @Test

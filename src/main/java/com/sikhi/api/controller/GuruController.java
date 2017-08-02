@@ -25,7 +25,7 @@ public class GuruController {
             produces = MediaType.APPLICATION_JSON_VALUE,
             method = RequestMethod.GET)
     @ResponseStatus(code = HttpStatus.OK)
-    public Guru read(@PathVariable String id)
+    public Guru read(@PathVariable long id)
     throws ResultNotFoundException {
         return guruService.read(id);
     }

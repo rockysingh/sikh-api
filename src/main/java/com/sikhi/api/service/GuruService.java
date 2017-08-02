@@ -19,8 +19,8 @@ public class GuruService {
         this.guruRepository = guruRepository;
     }
 
-    public Guru read(String id) throws ResultNotFoundException {
-        Guru guru = guruRepository.findOne(id);
+    public Guru read(long id) throws ResultNotFoundException {
+        Guru guru = guruRepository.findById(id);
         if (guru == null) {
             throw new ResultNotFoundException("guru not found with id:" + id);
         }
