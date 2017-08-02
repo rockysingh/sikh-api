@@ -11,6 +11,13 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ControllerAdvice
 public class ErrorController {
 
+    @ExceptionHandler(Exception.class)
+    @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
+    @ResponseBody
+    public ErrorResponse handleError(Exception ex){
+        return new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(), ex.getMessage(), ex);
+    }
+
     @ExceptionHandler(ResultNotFoundException.class)
     @ResponseStatus(value= HttpStatus.NOT_FOUND)
     @ResponseBody
