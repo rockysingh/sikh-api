@@ -11,6 +11,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import java.util.List;
 
 import static org.junit.Assert.*;
+import static org.mockito.Matchers.anyLong;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.when;
 
@@ -28,7 +29,7 @@ public class GuruServiceTest extends UnitBaseTest {
 
     @Test
     public void read_success() throws Exception {
-        when(guruRepository.findOne(anyString())).thenReturn(getGuru());
+        when(guruRepository.findById(anyLong())).thenReturn(getGuru());
         Guru guru = guruService.read(1);
         assertEquals(getGuru(),guru);
 
@@ -36,7 +37,7 @@ public class GuruServiceTest extends UnitBaseTest {
 
     @Test(expected = ResultNotFoundException.class)
     public void read_throws_result_not_found_exception() throws Exception {
-        when(guruRepository.findOne(anyString())).thenReturn(null);
+        when(guruRepository.findById(anyLong())).thenReturn(null);
         Guru guru = guruService.read(12);
     }
 

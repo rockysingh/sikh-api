@@ -11,6 +11,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import java.util.List;
 
 import static org.junit.Assert.*;
+import static org.mockito.Matchers.anyLong;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.when;
 
@@ -28,7 +29,7 @@ public class PanjPyareServiceTest extends UnitBaseTest {
 
     @Test
     public void read_success() throws Exception {
-        when(panjPyareRepository.findOne(anyString())).thenReturn(getPanjPyara());
+        when(panjPyareRepository.findById(anyLong())).thenReturn(getPanjPyara());
         PanjPyare panjPyara = panjPyareService.read(1);
         assertEquals(getPanjPyara(), panjPyara);
 
@@ -36,7 +37,7 @@ public class PanjPyareServiceTest extends UnitBaseTest {
 
     @Test(expected = ResultNotFoundException.class)
     public void read_throws_result_not_found_exception() throws Exception {
-        when(panjPyareRepository.findOne(anyString())).thenReturn(null);
+        when(panjPyareRepository.findById(anyLong())).thenReturn(null);
         PanjPyare panjPyara = panjPyareService.read(6);
     }
 
