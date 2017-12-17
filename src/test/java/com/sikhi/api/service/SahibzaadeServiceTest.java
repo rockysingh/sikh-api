@@ -1,8 +1,6 @@
 package com.sikhi.api.service;
 
-import com.sikhi.api.BaseTest;
 import com.sikhi.api.UnitBaseTest;
-import com.sikhi.api.entity.PanjPyare;
 import com.sikhi.api.entity.Sahibzaade;
 import com.sikhi.api.exception.ResultNotFoundException;
 import com.sikhi.api.repository.SahibzaadeRepository;
@@ -12,7 +10,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.anyLong;
 import static org.mockito.Mockito.when;
 

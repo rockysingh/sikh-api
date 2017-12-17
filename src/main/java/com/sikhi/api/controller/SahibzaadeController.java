@@ -1,9 +1,7 @@
 package com.sikhi.api.controller;
 
-import com.sikhi.api.entity.PanjPyare;
 import com.sikhi.api.entity.Sahibzaade;
 import com.sikhi.api.exception.ResultNotFoundException;
-import com.sikhi.api.service.PanjPyareService;
 import com.sikhi.api.service.SahibzaadeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
