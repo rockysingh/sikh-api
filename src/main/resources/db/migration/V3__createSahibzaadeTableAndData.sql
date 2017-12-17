@@ -10,7 +10,7 @@ CREATE TABLE sahibzaade(
 );
 
 INSERT INTO sahibzaade (id, name, birthDate, birthYear, birthLocation,  martyredLocation, martyredYear, martyredAge)
-VALUES (1, 'Baba Ajit Singh Ji','11th February', 1687, 'Poanta Sahib', 'Gurdwara Katalgarh Sahib in Chamkaur Sahiib', 1705, 18 );
+VALUES (1, 'Baba Ajit Singh Ji','11th February', 1687, 'Poanta Sahib', 'Gurdwara Katalgarh Sahib in Chamkaur Sahib', 1705, 18 );
 
 INSERT INTO sahibzaade (id, name, birthDate, birthYear, birthLocation,  martyredLocation, martyredYear, martyredAge)
 VALUES (2, 'Baba Jujhar Singh Ji','27th September', 1691, 'Anandpur Sahib', 'Gurdwara Katalgarh Sahib in Chamkaur Sahib', 1705, 15 );
